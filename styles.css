@@ -1,0 +1,144 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(45deg, #6c5ce7, #00bcd4);
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Search section styling */
+.search-section {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-section input {
+    width: 60%;
+    padding: 15px;
+    font-size: 1.1em;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.search-section input:focus {
+    border: 2px solid #6c5ce7;
+    outline: none;
+}
+
+.search-section button {
+    padding: 15px 25px;
+    font-size: 1.2em;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-section button:hover {
+    background-color: #00bcd4;
+}
+
+/* Job Listings styling */
+.job-listings {
+    padding: 50px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job-listings h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #6c5ce7;
+}
+
+#jobResults {
+    list-style-type: none;
+    padding: 0;
+}
+
+.job-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.job-item strong {
+    font-size: 1.2em;
+}
+
+.job-item em {
+    font-style: italic;
+}
+
+.job-item span {
+    color: #777;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Spinner Styling */
+.spinner {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #6c5ce7; /* Purple */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 30px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
